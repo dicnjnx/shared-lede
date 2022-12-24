@@ -50,14 +50,9 @@ jobs:
       - name: prepare environments
         run: |
           sudo apt-get update
-          sudo apt-get -y install \
-            antlr3 asciidoc autoconf automake autopoint binutils build-essential \
-            bzip2 device-tree-compiler flex g++-multilib gawk gcc-multilib \
-            gettext git gperf lib32gcc1 libc6-dev-i386 libelf-dev libglib2.0-dev \
-            libncurses5-dev libssl-dev libtinfo5 libtool libz-dev msmtp p7zip \
-            p7zip-full patch python3 qemu-utils subversion swig texinfo uglifyjs \
-            unzip upx xmlto zip zlib1g-dev
+          sudo apt-get -y install gcc-multilib gettext libncurses5-dev
           sudo apt-get clean
+          pip3 install -r extra-files/requirements-transit.txt
 
       - name: clone sources
         run: |
