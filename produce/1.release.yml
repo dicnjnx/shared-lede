@@ -1,7 +1,7 @@
 model_newifi-d2:
   title: <source> for <device>
   body:
-    - <设备><源码>固件
-    - 版本：xxx
+    - <newifi-d2><Lienol>固件
+    - 版本：master
     - 登陆信息：<IP>，<密码>
     - 应用：xxx
