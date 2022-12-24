@@ -5,7 +5,7 @@
 #
 # <https://github.com/hugcabbage/shared-lede>
 #
-name: device 1
+name: D2
 
 on:
   workflow_dispatch:
